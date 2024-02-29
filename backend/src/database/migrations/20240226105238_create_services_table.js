@@ -7,8 +7,8 @@ exports.up = function(knex) {
     table.increments('id');
     table.text('service_name').notNullable();
     table.text('person_name').notNullable();
-    table.decimal('latitude', 10, 8).notNullable().unsigned();
-    table.decimal('longitude', 11, 8).notNullable().unsigned();
+    table.decimal('latitude', 10, 8).notNullable();
+    table.decimal('longitude', 11, 8).notNullable();
   });
 };
 

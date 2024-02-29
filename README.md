@@ -39,12 +39,12 @@ El objetivo de esta prueba es construir una seeder para crear puntos aleatorios 
 ## Criterios de evaluación
 - Puntos totales: 40 puntos
 
-| Evaluación                                        | Puntos |
-|---------------------------------------------------|--------|
-| Creación del seeder con KnexJS y Faker            | 10 pts |
-| Creación del proyecto Ionic - Angular             | 10 pts |
-| Creación del componente de Mapas con Google Maps  | 10 pts |
-| Mostrar adecuadamente la información en el mapa   | 10 pts |
+| Evaluación                                                       | Puntos |
+|------------------------------------------------------------------|--------|
+| Creación del seeder con KnexJS y Faker                           | 10 pts |
+| Creación del proyecto Ionic - Angular                            | 10 pts |
+| Creación del componente de Mapas con Google Maps                 | 10 pts |
+| Mostrar adecuadamente la información en el mapa con MapMarkers   | 10 pts |
 
 ## Preguntas
 Las preguntas sobre esta prueba técnica puedes realizarlas a contacto [at] dogkas.cl
