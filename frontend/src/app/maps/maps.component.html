@@ -1,3 +1,23 @@
-<p>
-  maps works!
-</p>
+@if (this.mapsLib.loaded()) {
+<google-map width="100%" height="500px" [center]="center" [zoom]="zoom">
+  @for (point of pointList; track point.id) {
+  <map-marker #markerEl="mapMarker" [position]="point.position" (mapClick)="openInfoWindow(markerEl, point)"></map-marker>
+  }
+  <map-info-window>
+    @if(selectedPoint){
+    <h4>{{selectedPoint.personName}}</h4>
+    <p>{{selectedPoint.serviceName}}</p>
+    <p>lat: {{selectedPoint.position.lat}}, lng: {{selectedPoint.position.lng}}</p>
+    }
+  </map-info-window>
+
+</google-map>
+} @else if (this.mapsLib.failed()){
+<div class="map-error">
+  <p>Something went wrong!</p>
+  <ion-button (click)="this.mapsLib.load()">Retry</ion-button>
+</div>
+} @else {
+<div class="map-placeholder skeleton">
+</div>
+}

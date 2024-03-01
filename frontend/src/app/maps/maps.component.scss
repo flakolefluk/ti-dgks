@@ -1,0 +1,28 @@
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    background: linear-gradient(90deg, transparent,
+            rgba(220, 220, 220, 0.3), transparent);
+}
+
+@keyframes skeleton-loading {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.map-placeholder {
+    height: 500px;
+}
+
+.map-error {
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+map-info-window {
+    color: black;
+}
