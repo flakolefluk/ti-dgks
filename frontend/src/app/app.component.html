@@ -1,0 +1,7 @@
+<ion-app>
+  <ion-content [fullscreen]="true">
+    @if( pointList$|async; as pointList) {
+    <app-maps [pointList]="pointList"></app-maps>
+    }
+  </ion-content>
+</ion-app>

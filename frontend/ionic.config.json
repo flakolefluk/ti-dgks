@@ -1,0 +1,7 @@
+{
+  "name": "ti-dogkas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
